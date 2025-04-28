@@ -1,4 +1,5 @@
 const form = document.querySelector("form");
+const ol = document.querySelector("ol");
 const pets = [];
 
 class Pet {
@@ -31,5 +32,14 @@ function createPet(pet, owner, species, breed) {
   console.log(newPet);
   pets.push(newPet);
   console.log(pets);
-  console.log(pets[0].ownerComparison(pets[1]));
+  if (pets.length > 1) {
+    console.log(pets[0].ownerComparison(pets[1]));
+  }
+  addPet(newPet);
+}
+
+function addPet(pet) {
+  const li = document.createElement("li");
+  li.textContent = pet.name;
+  ol.appendChild(li);
 }
