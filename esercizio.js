@@ -12,7 +12,7 @@ class User {
     } else if (this.age < y) {
       return `Il signor ${this.firstName} è più giovane dell'altro tizio`;
     } else {
-      return `Il signor ${this.firstName} è  coetaneo dell'altro tizio`;
+      return `Il signor ${this.firstName} è  coetaneo con l'altro tizio`;
     }
   }
 }
